@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A clean calculator with arithmetic operations, live result preview, and keyboard support — built by Vipin Kannaujiya." />
+  <title>Calculator | Vipin Kannaujiya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>" />
+</head>
+<body>
+
+  <div class="calc-app">
+
+    <header class="calc-header">
+      <a href="index.html" class="back-link">← Back to Portfolio</a>
+      <h1>Calculator</h1>
+    </header>
+
+    <div class="calculator">
+      <!-- Display screen -->
+      <div class="display">
+        <div class="expr" id="expr">0</div>
+        <div class="result" id="result"></div>
+      </div>
+
+      <!-- Keypad -->
+      <div class="keypad" id="keypad">
+        <button class="key fn"  data-action="clear"  aria-label="All clear">AC</button>
+        <button class="key fn"  data-action="delete" aria-label="Delete last">DEL</button>
+        <button class="key op"  data-value="%"      aria-label="Modulo">%</button>
+        <button class="key op"  data-value="/"      aria-label="Divide">÷</button>
+
+        <button class="key"    data-value="7">7</button>
+        <button class="key"    data-value="8">8</button>
+        <button class="key"    data-value="9">9</button>
+        <button class="key op"  data-value="*"      aria-label="Multiply">×</button>
+
+        <button class="key"    data-value="4">4</button>
+        <button class="key"    data-value="5">5</button>
+        <button class="key"    data-value="6">6</button>
+        <button class="key op"  data-value="-"      aria-label="Subtract">−</button>
+
+        <button class="key"    data-value="1">1</button>
+        <button class="key"    data-value="2">2</button>
+        <button class="key"    data-value="3">3</button>
+        <button class="key op"  data-value="+"      aria-label="Add">+</button>
+
+        <button class="key fn"  data-action="sign"  aria-label="Toggle sign">±</button>
+        <button class="key"    data-value="0">0</button>
+        <button class="key"    data-value=".">.</button>
+        <button class="key eq"  data-action="equals" aria-label="Equals">=</button>
+      </div>
+    </div>
+
+    <p class="hint">
+      Tip: use your keyboard — <b>0–9</b>, <b>+ − × ÷ %</b>,
+      <b>Enter</b> to calculate, <b>Backspace</b> to delete, <b>Esc</b> to clear.
+    </p>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
